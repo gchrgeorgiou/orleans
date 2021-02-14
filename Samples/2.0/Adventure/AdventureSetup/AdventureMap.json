@@ -1,22 +1,22 @@
-﻿{
-    "name" : "A first game",
+{
+    "name" : "A visit ai IT Building",
     "rooms" : [
-        { "id" : 0, "name" : "west-of-house", "description" : "You are standing in an open field west of a white house with a boarded front door.\nThere is a forest to the north.", "directions" : {"north" : 1 } },
-        { "id" : 1, "name" : "forest", "description" : "This is a dimly lit forest, with large trees all around.\nThere is a clearing to the north, and a house to the south.", "directions" : {"north" : 2, "south" : 0 } },
-        { "id" : 2, "name" : "clearing", "description" : "You are in a clearing, with a forest surrounding you on the west and south.\nThere is a forest to the south, and a canyon to the west.", "directions" : {"west" : 3, "south" : 1 } },
-        { "id" : 3, "name" : "canyon", "description" : "You are at the top of the great canyon on its south wall.\nThere is a beach to the west, and a clearing to the east.", "directions" : {"west" : 4, "east": 2 } },
-        { "id" : 4, "name" : "beach", "description" : "You are on a small beach on the Frigid River, past the falls.\nThere is a faint smell of sulfur coming from the ground.\nThere is a clearing to the north, and a canyon to the east.", "directions" : {"east" : 3, "down" : -1 } },
-        { "id" : -1, "name" : "styx", "description" : "In front of you is the River Styx.", "directions" : { "forward" : -2} },
-        { "id" : -2, "name" : "hades", "description" : "\nWelcome to Hades!\n\nWe must inform you that no one ever leaves.\nYou might as well end right now.", "directions" : { } }
+        { "id" : 0, "name" : "IT Building", "description" : "You are standing in from of a glass building. It allegedly hosts hundereds of enginners.\nThere is a door to the north.", "directions" : {"north" : 1 } },
+        { "id" : 1, "name" : "Entrance Hall", "description" : "This is the entrance hall.\nThere is a canteen to the east, and a door to the south.", "directions" : {"east" : 2, "south" : 0 } },
+        { "id" : 2, "name" : "Canteen", "description" : "You are in a canteen, Sofia nd Giorgakis are also there.\nThere is an entrance hall to the east, and a toilet to the west.", "directions" : {"west" : 3, "south" : 1 } },
+        { "id" : 3, "name" : "Toilet", "description" : "You are inside the ground floor's toilets!\nYiaks, it smells bad!\nThere is a stair leading to the 1st floor to the west, and a canteen to the east.", "directions" : {"west" : 4, "east": 2 } },
+        { "id" : 4, "name" : "1st Floor", "description" : "You are on the 1st floor of the building, in a dark corridor.\nThere are people shouting from up the 2nd floor.\nThere are offices to the west, and a toilet to the east.", "directions" : {"east" : 3, "up" : -1 } },
+        { "id" : -1, "name" : "2nd Floor", "description" : "You are on the second floor. People are screaming. In front of you there is only a staircase.", "directions" : { "forward" : -2} },
+        { "id" : -2, "name" : "Roof", "description" : "\nWelcome to the roof!\n\nWe must inform you that no one ever leaves.\nYou might as well end right now.", "directions" : { } }
     ],
     "things" : [ 
-        { "id" : 0, "name" : "brass key", "article": "a", "category": "key", "foundIn" : 2, "commands" : ["lock","unlock"]},
-        { "id" : 1, "name" : "knife", "article": "a", "category": "weapon", "foundIn" : 3, "commands" : ["kill"]},
-        { "id" : 2, "name" : "sandwich", "article": "a", "category": "food", "foundIn" : 4, "commands" : ["eat"]},
-        { "id" : 3, "name" : "glass of water", "article": "a", "category": "beverage", "foundIn" : 4, "commands" : ["drink"]}
+        { "id" : 0, "name" : "brass key", "article": "a", "category": "key", "foundIn" : 3, "commands" : ["lock","unlock"]},
+        { "id" : 1, "name" : "knife", "article": "a", "category": "weapon", "foundIn" : 1, "commands" : ["kill"]},
+        { "id" : 2, "name" : "sandwich", "article": "a", "category": "food", "foundIn" : 2, "commands" : ["eat"]},
+        { "id" : 3, "name" : "glass of water", "article": "a", "category": "beverage", "foundIn" : 2, "commands" : ["drink"]}
     ],
     "monsters" : [
-        { "id" : 0, "name" : "An Angry Customer", "killedBy" : [1]},
-        { "id" : 1, "name" : "The Wicked Witch of the East", "killedBy" : [3]}
+        { "id" : 0, "name" : "IT Manager", "killedBy" : [-1]},
+        { "id" : 1, "name" : "Group4", "killedBy" : [4]}
     ]
 }
